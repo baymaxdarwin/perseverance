@@ -1,4 +1,4 @@
-const input = new Array(1000).fill("ravi");
+const input = new Array(100000).fill("ravi");
 
 function simpleSearch(array) {
   const t1 = process.hrtime();
@@ -9,7 +9,7 @@ function simpleSearch(array) {
     }
   }
   const t2 = process.hrtime(t1);
-  console.log(t2, "milliseconds");
+  console.log(t2, "nanoseconds");
 }
 
 simpleSearch(input);
